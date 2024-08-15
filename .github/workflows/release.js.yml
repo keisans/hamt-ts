@@ -29,6 +29,9 @@ jobs:
   publish-gpr:
     needs: build
     runs-on: ubuntu-22.04
+    permissions:
+      packages: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - name: Install pnpm
@@ -39,8 +42,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          registry-url: https://npm.pkg.github.com/
       - name: Install dependencies
-        run: pnpm install
+        run: npm ci
       - name: Publish to GitHub Package Registry
-        run: pnpm publish --access public --registry https://npm.pkg.github.com --no-git-checks
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
