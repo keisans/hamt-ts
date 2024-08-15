@@ -25,6 +25,7 @@
     "build": "vite build",
     "test": "npm run lint && npm run prettier && npm run vitest",
     "vitest": "vitest run",
+    "coverage": "vitest run --coverage",
     "clean": "rm -rf ./dist",
     "prebuild": "npm run clean"
   },
@@ -49,7 +50,6 @@
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.1.0",
     "@vitest/coverage-istanbul": "^2.0.5",
-    "benchmark": "^2.1.4",
     "eslint": "^8.38.0",
     "eslint-plugin-deprecation": "^1.4.1",
     "eslint-plugin-import": "^2.27.5",
