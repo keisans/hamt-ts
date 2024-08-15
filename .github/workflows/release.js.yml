@@ -43,4 +43,4 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Publish to GitHub Package Registry
-        run: pnpm publish --access public --registry https://npm.pkg.github.com
+        run: pnpm publish --access public --registry https://npm.pkg.github.com --no-git-checks
