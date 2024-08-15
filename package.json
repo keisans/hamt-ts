@@ -7,6 +7,13 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keisans/hamt-ts"
+  },
+  "bugs": {
+    "url": "https://github.com/keisans/hamt-ts/issues"
+  },
   "type": "module",
   "sideEffects": false,
   "scripts": {
@@ -27,9 +34,17 @@
       "require": "./dist/htmt-ts.umd.cjs"
     }
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "functional-programming",
+    "immutable",
+    "typescript",
+    "data-structure"
+  ],
+  "author": {
+    "name": "Ryan Struhl"
+  },
+  "homepage": "https://github.com/keisans/hamt-ts",
+  "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.1.0",
