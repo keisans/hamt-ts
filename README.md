@@ -73,4 +73,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License.
+Copyright © 2017, Ryan Struhl. This project is licensed under the MIT License.
